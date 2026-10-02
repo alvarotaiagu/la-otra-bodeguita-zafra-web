@@ -1,0 +1,97 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Módulo «La cámara» (dentro de Carnes). Se puede quitar entero:
+   node scripts/quitar-camara.mjs (receta en el README). Nada de fuera depende
+   de esta hoja. Acero y kraft: los de su cámara de verdad. Sin vaho, sin veta,
+   sin cuchillos: la cámara no se empaña ni se corta.
+   ═══════════════════════════════════════════════════════════════════════════ */
+.camara {
+  --acero-1: #DCE1E3; --acero-2: #8E9A9E; --acero-3: #5D676B;
+  --kraft: #C8A773; --kraft-osc: #B08F5C;
+  margin-top: clamp(3.5rem, 7vw, 5.5rem);
+  padding: clamp(2.2rem, 5vw, 4rem) clamp(1.2rem, 3.4vw, 3rem) clamp(2.4rem, 5vw, 3.6rem);
+  background: #ECE9E3;
+  border-top: 2px solid var(--tinta);
+  scroll-margin-top: calc(var(--alto-cabecera) + 1rem);
+}
+.camara__cabeza { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: end; gap: .6rem clamp(2rem, 5vw, 4.5rem); }
+.camara__cabeza .antetitulo { grid-column: 1 / -1; margin-bottom: 0; }
+.camara__titulo { font: 700 clamp(2.6rem, 6.4vw, 5.6rem)/1.06 var(--tipo-titular); text-transform: uppercase; letter-spacing: -.015em; }
+.camara__cita p { font: 300 clamp(1.3rem, 2.4vw, 2rem)/1.3 var(--tipo-titular); }
+.camara__cita footer { margin-top: .7rem; font-size: .9rem; color: var(--piedra-texto); }
+
+/* la barra de acero: cada gancho dibuja su tramo, así en móvil salen dos barras */
+.camara__barra { margin-top: clamp(2.4rem, 5vw, 3.6rem); }
+.camara__acero { display: none; }
+.camara__etiquetas { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); row-gap: 1.6rem; }
+.camara__gancho { position: relative; display: flex; justify-content: center; padding-top: 6px; }
+.camara__gancho::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 12px;
+  background: linear-gradient(180deg, var(--acero-1), var(--acero-2) 45%, var(--acero-3) 58%, #C4CBCE);
+  box-shadow: 0 6px 10px -6px rgba(22, 21, 20, .45);
+}
+.camara__gancho:first-child::before { left: 4%; border-radius: 6px 0 0 6px; }
+.camara__gancho:last-child::before { right: 4%; border-radius: 0 6px 6px 0; }
+.etiqueta {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 0; border: 0; background: none; cursor: pointer; color: var(--tinta);
+  transform-origin: 50% 0;
+  will-change: transform;
+}
+.etiqueta__cuerda { width: 2px; height: 2.4rem; background: #7A6A55; }
+.camara__gancho:nth-child(2n) .etiqueta__cuerda { height: 3.4rem; }
+.camara__gancho:nth-child(3n) .etiqueta__cuerda { height: 2.9rem; }
+.etiqueta__carton {
+  position: relative; display: block;
+  min-width: 7.6rem; padding: 1.7rem 1rem 1.1rem;
+  background:
+    repeating-linear-gradient(98deg, rgba(255, 255, 255, .05) 0 2px, rgba(0, 0, 0, .03) 2px 5px),
+    var(--kraft);
+  clip-path: polygon(16% 0, 84% 0, 100% 14%, 100% 100%, 0 100%, 0 14%);
+  font: 700 .95rem/1.15 var(--tipo-titular); letter-spacing: .12em; text-transform: uppercase; text-align: center;
+  box-shadow: inset 0 -3px 0 var(--kraft-osc);
+}
+/* el agujero de la etiqueta, con su ojal */
+.etiqueta__carton::before {
+  content: ""; position: absolute; left: 50%; top: .5rem; width: .7rem; height: .7rem; margin-left: -.35rem;
+  border-radius: 50%; background: #ECE9E3; box-shadow: 0 0 0 2px #A88D60;
+}
+.etiqueta:focus-visible { outline: none; }
+.etiqueta:focus-visible .etiqueta__carton { outline: 3px solid var(--tinta); outline-offset: 3px; }
+.camara__ayuda { margin-top: 1.4rem; font-size: .9rem; color: var(--piedra-texto); text-align: center; }
+
+/* la ficha de cada pieza */
+.ficha-dialogo {
+  width: min(760px, calc(100vw - 2rem)); max-height: calc(100dvh - 2rem);
+  padding: 0; border: 0; background: var(--hueso); color: var(--tinta);
+  box-shadow: 0 30px 80px -30px rgba(0, 0, 0, .7);
+}
+.ficha-dialogo::backdrop { background: rgba(20, 28, 12, .72); }
+.ficha-dialogo__caja { position: relative; padding: clamp(1.2rem, 3vw, 2rem); }
+.ficha-dialogo__cerrar {
+  position: absolute; right: .6rem; top: .6rem; z-index: 2;
+  width: 44px; height: 44px; border: 0; background: var(--hueso); color: var(--tinta);
+  font-size: 1.8rem; line-height: 1; cursor: pointer;
+}
+.ficha-dialogo__nombre { margin: 0 3rem 1rem 0; font: 700 clamp(1.6rem, 3.4vw, 2.4rem)/1.06 var(--tipo-titular); text-transform: uppercase; }
+.ficha__foto img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.ficha__foto figcaption { margin-top: .5rem; font-size: .85rem; color: var(--piedra-texto); }
+.ficha__texto { margin-top: 1rem; font-size: 1.08rem; }
+.ficha__fuente { margin-top: .5rem; font-size: .85rem; color: var(--piedra-texto); }
+
+/* a la brasa y a la piedra */
+.camara__fuegos { margin-top: clamp(3rem, 6vw, 4.5rem); }
+.camara__subtitulo { margin-bottom: 1.2rem; font: 700 clamp(1.5rem, 3vw, 2.4rem)/1.06 var(--tipo-titular); text-transform: uppercase; }
+.camara__par { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1rem, 2vw, 1.6rem); }
+.camara__piedra img { object-position: 50% 45%; }
+.camara__linea { margin-top: .8rem; max-width: 46rem; font-size: 1.05rem; }
+.camara__linea + .camara__linea { margin-top: .3rem; }
+.camara__marcas { margin-top: 2rem; }
+
+@media (max-width: 860px) {
+  .camara__cabeza { grid-template-columns: minmax(0, 1fr); }
+  .camara__etiquetas { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .camara__gancho:nth-child(3)::before { right: 4%; border-radius: 0 6px 6px 0; }
+  .camara__gancho:nth-child(4)::before { left: 4%; border-radius: 6px 0 0 6px; }
+  .etiqueta__carton { min-width: 0; width: 100%; padding-inline: .4rem; font-size: .8rem; letter-spacing: .06em; }
+  .camara__par { grid-template-columns: minmax(0, 1fr); }
+}

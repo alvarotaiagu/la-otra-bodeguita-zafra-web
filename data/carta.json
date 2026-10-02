@@ -1,0 +1,467 @@
+{
+  "nota": "La carta de la web. Tras cambiar algo: node scripts/construir.mjs. «vigente»: true si está en la carta de febrero de 2024 o lo han publicado en 2025–2026; con false no se pinta y el mando lo lista para preguntar. «descripcion» solo si la escribieron ellos (fuente al lado). «precio»: el de la carta del 06-02-2024 o null; NO se enseña mientras «mostrarPrecios» sea false.",
+  "mostrarPrecios": false,
+  "avisoPrecios": "Precios de febrero de 2024: pendientes de confirmar",
+  "fuentePrecios": "Carta con precios publicada en Instagram el 06-02-2024 (C3AgpKBod--)",
+  "pie": "Los platos son elaborados en el momento y requieren un tiempo mínimo de elaboración.",
+  "partes": [
+    {
+      "id": "entrantes",
+      "nombre": "Entrantes",
+      "entrada": "Para abrir la mesa y compartir: ibéricos de bellota, quesos, ensaladas y las croquetas caseras.",
+      "fotos": [
+        { "id": "DMXNJK4ImGg", "pie": "Croquetas caseras" },
+        { "id": "DPt6lUpCAj8", "pie": "Surtido de quesos" },
+        { "id": "DSQZlFEiO9d", "pie": "Ensalada de tomate, cebolla morada y atún" },
+        { "id": "DRqDm07COSY", "pie": "Alcachofa confitada" }
+      ]
+    },
+    {
+      "id": "del-mar",
+      "nombre": "Del mar",
+      "entrada": "El pulpo va a la plancha, crujiente por fuera y tierno por dentro. El bacalao, a la nata o dorado.",
+      "fotos": [
+        { "id": "DVa0L3MiLZH", "pie": "Pulpo a la plancha" },
+        { "id": "DOk1vFaiGAA", "pie": "Bacalao a la nata" },
+        { "id": "DQw7alCiA2z", "pie": "Huevos rotos con pulpo salteado" },
+        { "id": "DRIjPxtCFB7", "pie": "Chipirones a la plancha" }
+      ]
+    },
+    {
+      "id": "carnes",
+      "nombre": "Carnes",
+      "entrada": "Carne madurada en nuestra cámara, a la brasa o a la piedra, y guisos de siempre como las carrilleras al vino tinto.",
+      "fotos": [
+        { "id": "DV-8EuriCKd", "pie": "T-bone a la brasa" },
+        { "id": "DT3Gt1OCJYW", "pie": "Presa ibérica" },
+        { "id": "DWgJmFxiBVu", "pie": "Carrilleras al vino tinto" },
+        { "id": "DR7KSpsCGr-", "pie": "Cachopo de ternera" }
+      ]
+    },
+    {
+      "id": "postres",
+      "nombre": "Postres",
+      "entrada": "Caseros, para terminar: tiramisú, tarta de queso, tres chocolates y flan.",
+      "fotos": [
+        { "id": "DQSGjqniL1j", "pie": "Tiramisú casero" },
+        { "id": "DGA-vubI_rk", "pie": "Tarta de queso" }
+      ]
+    }
+  ],
+  "platos": [
+    {
+      "id": "jamon",
+      "nombre": "Jamón ibérico de bellota",
+      "descripcion": "Bellota 100 %, aroma intenso y sabor que habla por sí solo.",
+      "parte": "entrantes",
+      "precio": 18,
+      "fuente": "Carta 06-02-2024 · Instagram 18-05-2025 (DJzHr5WIOem)",
+      "vigente": true
+    },
+    {
+      "id": "lomo",
+      "nombre": "Lomo ibérico de bellota",
+      "descripcion": null,
+      "parte": "entrantes",
+      "precio": 15,
+      "fuente": "Carta 06-02-2024",
+      "vigente": true
+    },
+    {
+      "id": "queso-oveja",
+      "nombre": "Queso de oveja",
+      "descripcion": null,
+      "parte": "entrantes",
+      "precio": 12,
+      "fuente": "Carta 06-02-2024",
+      "vigente": true
+    },
+    {
+      "id": "torta-barros",
+      "nombre": "Torta de Barros",
+      "descripcion": null,
+      "parte": "entrantes",
+      "precio": 14,
+      "fuente": "Carta 06-02-2024 · Instagram 22-03-2025",
+      "vigente": true
+    },
+    {
+      "id": "surtido-ibericos",
+      "nombre": "Surtido de ibéricos",
+      "descripcion": null,
+      "parte": "entrantes",
+      "precio": 18,
+      "fuente": "Carta 06-02-2024",
+      "vigente": true
+    },
+    {
+      "id": "surtido-quesos",
+      "nombre": "Surtido de quesos",
+      "descripcion": "Sabores intensos, texturas únicas y ese toque dulce que lo une todo.",
+      "parte": "entrantes",
+      "precio": 15,
+      "fuente": "Carta 06-02-2024 · Instagram 12-10-2025 (DPt6lUpCAj8, «tabla de quesos»)",
+      "vigente": true
+    },
+    {
+      "id": "ensalada-rulo",
+      "nombre": "Ensalada de rulo de cabra",
+      "descripcion": "Con nueces y miel.",
+      "parte": "entrantes",
+      "precio": 10,
+      "fuente": "Carta 06-02-2024 · Instagram 03-07-2025 (DLpuEPfoPzy)",
+      "vigente": true
+    },
+    {
+      "id": "ensalada-perdiz",
+      "nombre": "Ensalada de perdiz",
+      "descripcion": null,
+      "parte": "entrantes",
+      "precio": 12,
+      "fuente": "Carta 06-02-2024 · Instagram 03-07-2025 (DLpuEPfoPzy)",
+      "vigente": true
+    },
+    {
+      "id": "ensalada-cesar",
+      "nombre": "Ensalada César",
+      "descripcion": "Con crujiente de pollo.",
+      "parte": "entrantes",
+      "precio": 12,
+      "fuente": "Carta 06-02-2024 · Instagram 03-07-2025 (DLpuEPfoPzy)",
+      "vigente": true
+    },
+    {
+      "id": "ensalada-tomate",
+      "nombre": "Ensalada de tomate, cebolla morada y atún",
+      "descripcion": "Bañada con una vinagreta de la casa.",
+      "parte": "entrantes",
+      "precio": null,
+      "fuente": "Instagram 14-12-2025 (DSQZlFEiO9d)",
+      "vigente": true
+    },
+    {
+      "id": "boletus",
+      "nombre": "Boletus salteados",
+      "descripcion": "Con aceite de trufa y huevo.",
+      "parte": "entrantes",
+      "precio": 12,
+      "fuente": "Carta 06-02-2024 · Instagram 14-02-2025",
+      "vigente": true
+    },
+    {
+      "id": "croquetas-jamon",
+      "nombre": "Croquetas caseras de jamón",
+      "descripcion": null,
+      "parte": "entrantes",
+      "precio": 12,
+      "fuente": "Carta 06-02-2024 · Instagram 21-07-2025 (DMXNJK4ImGg)",
+      "vigente": true
+    },
+    {
+      "id": "croquetas-queso",
+      "nombre": "Croquetas caseras de queso azul",
+      "descripcion": null,
+      "parte": "entrantes",
+      "precio": 12,
+      "fuente": "Carta 06-02-2024 · Instagram 21-07-2025 (DMXNJK4ImGg)",
+      "vigente": true
+    },
+    {
+      "id": "alcachofa",
+      "nombre": "Alcachofa confitada",
+      "descripcion": "Tierna y sabrosa.",
+      "parte": "entrantes",
+      "precio": null,
+      "fuente": "Instagram 29-11-2025 (DRqDm07COSY)",
+      "vigente": true
+    },
+    {
+      "id": "pulpo",
+      "nombre": "Pulpo a la plancha",
+      "descripcion": "Crujiente por fuera, tierno por dentro.",
+      "parte": "del-mar",
+      "precio": null,
+      "fuente": "Instagram 03-03-2026 (DVa0L3MiLZH)",
+      "vigente": true
+    },
+    {
+      "id": "huevos-pulpo",
+      "nombre": "Huevos rotos con pulpo salteado",
+      "descripcion": null,
+      "parte": "del-mar",
+      "precio": 15,
+      "fuente": "Carta 06-02-2024 · Instagram 07-11-2025 (DQw7alCiA2z)",
+      "vigente": true
+    },
+    {
+      "id": "bacalao-nata",
+      "nombre": "Bacalao a la nata",
+      "descripcion": "Delicado, cremoso y lleno de sabor.",
+      "parte": "del-mar",
+      "precio": 12,
+      "fuente": "Carta 06-02-2024 · Instagram 14-09-2025 (DOk1vFaiGAA)",
+      "vigente": true
+    },
+    {
+      "id": "bacalao-dorado",
+      "nombre": "Bacalao dorado",
+      "descripcion": null,
+      "parte": "del-mar",
+      "precio": 12,
+      "fuente": "Carta 06-02-2024",
+      "vigente": true
+    },
+    {
+      "id": "chipirones",
+      "nombre": "Chipirones a la plancha",
+      "descripcion": "Jugosos, dorados y con todo el sabor del mar.",
+      "parte": "del-mar",
+      "precio": null,
+      "fuente": "Instagram 16-11-2025 (DRIjPxtCFB7)",
+      "vigente": true
+    },
+    {
+      "id": "calamar",
+      "nombre": "Calamar a la plancha",
+      "descripcion": "Acompañado de ensalada fresca y un toque de limón.",
+      "parte": "del-mar",
+      "precio": null,
+      "fuente": "Instagram 29-09-2025 (DPMLZmFCM7v)",
+      "vigente": true
+    },
+    {
+      "id": "piruletas-gambon",
+      "nombre": "Piruletas de gambón",
+      "descripcion": "Ideal para picar, compartir (o no).",
+      "parte": "del-mar",
+      "precio": null,
+      "fuente": "Instagram 10-04-2025 (DIRL6b6oW-F)",
+      "vigente": true
+    },
+    {
+      "id": "chuleton",
+      "nombre": "Chuletón de vaca Simmental",
+      "descripcion": "Marmoleo brutal, ternura fibrosa y un sabor que manda en la mesa.",
+      "parte": "carnes",
+      "precio": null,
+      "fuente": "Instagram 21-08-2025 (DNoJnVhIjvs)",
+      "vigente": true
+    },
+    {
+      "id": "t-bone",
+      "nombre": "T-bone",
+      "descripcion": "Un corte que reúne lo mejor de dos mundos en una sola pieza.",
+      "parte": "carnes",
+      "precio": null,
+      "fuente": "Instagram 11-09-2025 (DOeNj5piHCn) · 17-03-2026 (DV-8EuriCKd)",
+      "vigente": true
+    },
+    {
+      "id": "solomillo-buey",
+      "nombre": "Solomillo de buey",
+      "descripcion": null,
+      "parte": "carnes",
+      "precio": null,
+      "fuente": "Instagram 30-11-2025 (DRsd50uCCcW)",
+      "vigente": true
+    },
+    {
+      "id": "carne-piedra",
+      "nombre": "Carne a la piedra",
+      "descripcion": "Empieza sobre la piedra caliente, cocinándose al momento, justo a tu gusto.",
+      "parte": "carnes",
+      "precio": null,
+      "fuente": "Instagram 30-05-2025 (DKSGxGbI04n) · 24-08-2025 (DNvcQUwUEWw)",
+      "vigente": true
+    },
+    {
+      "id": "presa",
+      "nombre": "Presa ibérica",
+      "descripcion": "Brasa. Jugosidad. Carácter.",
+      "parte": "carnes",
+      "precio": null,
+      "fuente": "Instagram 23-01-2026 (DT3Gt1OCJYW)",
+      "vigente": true
+    },
+    {
+      "id": "carrilleras",
+      "nombre": "Carrilleras al vino tinto",
+      "descripcion": "Textura suave, sabor intenso y una salsa para mojar pan.",
+      "parte": "carnes",
+      "precio": null,
+      "fuente": "Instagram 28-12-2025 (DS0sNXTiMGN) · 30-03-2026 (DWgJmFxiBVu)",
+      "vigente": true
+    },
+    {
+      "id": "cachopo",
+      "nombre": "Cachopo de ternera",
+      "descripcion": null,
+      "parte": "carnes",
+      "precio": 18,
+      "fuente": "Carta 06-02-2024 · Instagram 06-12-2025 (DR7KSpsCGr-)",
+      "vigente": true
+    },
+    {
+      "id": "codillo",
+      "nombre": "Codillo",
+      "descripcion": null,
+      "parte": "carnes",
+      "precio": null,
+      "fuente": "Instagram 23-10-2025 (DQKOehaCH5w)",
+      "vigente": true
+    },
+    {
+      "id": "hamburguesa",
+      "nombre": "Hamburguesa 100 % buey",
+      "descripcion": null,
+      "parte": "carnes",
+      "precio": null,
+      "fuente": "Instagram 23-04-2024 (C6Gnc6YI5MI, «100% Buey») · 20-11-2025 (DRSOf4WiH2J)",
+      "vigente": true
+    },
+    {
+      "id": "tiramisu",
+      "nombre": "Tiramisú casero",
+      "descripcion": "Suave y cremoso.",
+      "parte": "postres",
+      "precio": null,
+      "fuente": "Instagram 04-05-2025 (DJPG0CJIN7Z) · 26-10-2025 (DQSGjqniL1j)",
+      "vigente": true
+    },
+    {
+      "id": "tarta-queso",
+      "nombre": "Tarta de queso",
+      "descripcion": "Base de crujiente galleta, crema de queso y una fina capa de mermelada de frutos del bosque.",
+      "parte": "postres",
+      "precio": null,
+      "fuente": "Instagram 17-01-2025 (DE7YooroEdC) · 13-02-2025 (DGA-vubI_rk)",
+      "vigente": true
+    },
+    {
+      "id": "tres-chocolates",
+      "nombre": "Tarta de tres chocolates",
+      "descripcion": "¿Uno solo? ¡Mejor tres!",
+      "parte": "postres",
+      "precio": null,
+      "fuente": "Instagram 03-02-2026 (DUSseetiPpR)",
+      "vigente": true
+    },
+    {
+      "id": "flan",
+      "nombre": "Flan casero",
+      "descripcion": "Suave y dulce.",
+      "parte": "postres",
+      "precio": null,
+      "fuente": "Instagram 10-07-2025 (DL7eKyhIO1i)",
+      "vigente": true
+    },
+    {
+      "id": "arroz-marisco",
+      "nombre": "Arroz caldoso de marisco",
+      "descripcion": null,
+      "parte": "del-mar",
+      "precio": null,
+      "fuente": "Instagram 15-10-2024 (último post)",
+      "vigente": false
+    },
+    {
+      "id": "arroz-negro",
+      "nombre": "Arroz negro con chipirones y alioli",
+      "descripcion": null,
+      "parte": "del-mar",
+      "precio": null,
+      "fuente": "Instagram 25-07-2024 (último post)",
+      "vigente": false
+    },
+    {
+      "id": "dorada",
+      "nombre": "Dorada a la espalda",
+      "descripcion": null,
+      "parte": "del-mar",
+      "precio": null,
+      "fuente": "Instagram 26-07-2022 (último post)",
+      "vigente": false
+    },
+    {
+      "id": "vieiras",
+      "nombre": "Vieiras rellenas y gratinadas",
+      "descripcion": null,
+      "parte": "del-mar",
+      "precio": null,
+      "fuente": "Instagram 16-02-2024 (último post)",
+      "vigente": false
+    },
+    {
+      "id": "gambones",
+      "nombre": "Gambones a la plancha",
+      "descripcion": null,
+      "parte": "del-mar",
+      "precio": null,
+      "fuente": "Instagram 18-04-2024 (último post)",
+      "vigente": false
+    },
+    {
+      "id": "wagyu",
+      "nombre": "Wagyu (cecina y carne)",
+      "descripcion": null,
+      "parte": "carnes",
+      "precio": null,
+      "fuente": "Instagram 07-12-2022 (último post)",
+      "vigente": false
+    }
+  ],
+  "marquee": [
+    [
+      {
+        "texto": "Pulpo a la plancha",
+        "ref": "pulpo"
+      },
+      {
+        "texto": "Croquetas caseras",
+        "ref": "croquetas-jamon"
+      },
+      {
+        "texto": "Bacalao a la nata",
+        "ref": "bacalao-nata"
+      },
+      {
+        "texto": "Carrilleras al vino tinto",
+        "ref": "carrilleras"
+      },
+      {
+        "texto": "Presa ibérica",
+        "ref": "presa"
+      },
+      {
+        "texto": "Tiramisú",
+        "ref": "tiramisu"
+      }
+    ],
+    [
+      {
+        "texto": "Torta de Barros",
+        "ref": "torta-barros"
+      },
+      {
+        "texto": "Chipirones a la plancha",
+        "ref": "chipirones"
+      },
+      {
+        "texto": "Carne a la piedra",
+        "ref": "carne-piedra"
+      },
+      {
+        "texto": "Alcachofa confitada",
+        "ref": "alcachofa"
+      },
+      {
+        "texto": "Huevos rotos con pulpo",
+        "ref": "huevos-pulpo"
+      },
+      {
+        "texto": "Tarta de queso",
+        "ref": "tarta-queso"
+      }
+    ]
+  ]
+}

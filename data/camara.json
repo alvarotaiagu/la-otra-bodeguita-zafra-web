@@ -1,0 +1,34 @@
+{
+  "nota": "El módulo «La cámara» (dentro de Carnes). La cámara cambia cada semana: cambia aquí las etiquetas y ejecuta node scripts/construir.mjs. «marcas»: false hasta que den permiso para nombrar a su proveedor; con false no sale ninguna marca (ni Discarlux, ni Vaca Vella · Marela, ni Angus, ni Old Special Beef) ni la foto Dc9VI6iI7UD. «texto» solo si lo escribieron ellos en un pie de 2025–2026; si no, null.",
+  "marcas": false,
+  "cita": {
+    "texto": "Tú eliges cuánto quieres y nosotros lo maduramos en nuestra cámara hasta que queda perfecto.",
+    "fuente": "Instagram, 21-08-2025 (DNoJnVhIjvs)"
+  },
+  "etiquetas": [
+    { "id": "chuleton", "nombre": "Chuletón", "foto": "DTlWShkDdgR",
+      "texto": "Chuletón de vaca Simmental. Marmoleo brutal, ternura fibrosa y un sabor que manda en la mesa.",
+      "fuente": "Instagram, 21-08-2025 (DNoJnVhIjvs)" },
+    { "id": "t-bone", "nombre": "T-bone", "foto": "DP-5C53CODL",
+      "texto": "Un corte que reúne lo mejor de dos mundos en una sola pieza. Lomo alto para los que buscan potencia y jugosidad. Solomillo para los que disfrutan de la suavidad extrema.",
+      "fuente": "Instagram, 11-09-2025 (DOeNj5piHCn)" },
+    { "id": "tomahawk", "nombre": "Tomahawk", "foto": "DSixXvdCEb8",
+      "texto": null, "fuente": "Cartelas de la cámara (último post con el nombre: 31-05-2024)" },
+    { "id": "solomillo", "nombre": "Solomillo", "foto": "DRsd50uCCcW",
+      "texto": "Sabor y jugosidad en su máxima expresión con este solomillo de buey.",
+      "fuente": "Instagram, 30-11-2025 (DRsd50uCCcW)" },
+    { "id": "picana", "nombre": "Picaña madurada", "foto": "DSixXvdCEb8",
+      "texto": null, "fuente": "Cartelas de la cámara (último post con el nombre: 04-06-2024)" }
+  ],
+  "fotoGenerica": "En la cámara, diciembre de 2025: «Materia prima de primera, lista para brillar en la parrilla».",
+  "fuegos": {
+    "titulo": "A la brasa y a la piedra",
+    "brasa": { "foto": "DN6EoJ9iHcX", "texto": "Sobre la parrilla, con la brasa viva: se sella por fuera y sale al punto que nos pidas." },
+    "piedra": { "foto": "DKO_RtvIBU8", "texto": "O a la piedra: llega caliente a la mesa, con su sal, y la terminas tú a tu gusto." }
+  },
+  "conMarcas": {
+    "foto": "Dc9VI6iI7UD",
+    "texto": "Nuestras carnes vienen de Discarlux: Angus, Old Special Beef y Vaca Vella · Marela.",
+    "fuente": "Instagram, 06-09-2026 (Dc9VI6iI7UD) y GastroPlanet, dic. 2022"
+  }
+}

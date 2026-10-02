@@ -1,0 +1,25 @@
+{
+  "nota": "Horario de la web. Tras cambiarlo: node scripts/construir.mjs (pinta las franjas, la frase de «La casa» y el JSON-LD). Mientras «confirmado» sea false, el mando de ?revision avisa. Horas en «HH:MM»; «24:00» = medianoche.",
+  "fuente": "Google Maps, consultado el 2026-10-02",
+  "confirmado": false,
+  "aviso": "Horario de Google: no cuadra con Instagram ni con el cartel de 2024",
+  "contradicciones": [
+    "Bio de Instagram: «De Lunes a Domingo: 8:30 a 17:00 / 20:00 a cierre».",
+    "Cartel del 11-01-2024: «CERRADO · Miércoles a partir de las 12:00 y jueves noche».",
+    "mymenuweb: lunes desde las 12:00 y noches desde las 20:30."
+  ],
+  "dias": [
+    { "dia": "lunes",     "corto": "L", "schema": "Monday",    "franjas": [["08:30", "17:00"], ["20:00", "24:00"]] },
+    { "dia": "martes",    "corto": "M", "schema": "Tuesday",   "franjas": [["08:30", "17:00"], ["20:00", "24:00"]] },
+    { "dia": "miércoles", "corto": "X", "schema": "Wednesday", "franjas": [["08:30", "17:00"], ["20:00", "24:00"]] },
+    { "dia": "jueves",    "corto": "J", "schema": "Thursday",  "franjas": [["08:30", "17:00"], ["20:00", "24:00"]] },
+    { "dia": "viernes",   "corto": "V", "schema": "Friday",    "franjas": [["08:30", "17:00"], ["20:00", "24:00"]] },
+    { "dia": "sábado",    "corto": "S", "schema": "Saturday",  "franjas": [["12:00", "17:00"], ["20:00", "24:00"]] },
+    { "dia": "domingo",   "corto": "D", "schema": "Sunday",    "franjas": [["12:00", "17:00"], ["20:00", "24:00"]] }
+  ],
+  "vacaciones": {
+    "mostrar": true,
+    "texto": "En julio y noviembre solemos cerrar unos días por vacaciones; lo avisamos en Instagram.",
+    "fuente": "Avisos en Instagram de 2022 a 2025 (último: «cerrados por vacaciones del 2 al 16 de noviembre», 09-11-2025)"
+  }
+}

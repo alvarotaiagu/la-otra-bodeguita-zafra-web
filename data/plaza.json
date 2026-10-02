@@ -1,0 +1,26 @@
+{
+  "nota": "Distancias a pie medidas, no copiadas. Lo que no se pueda medir va sin cifra. Tras cambiar algo: node scripts/construir.mjs.",
+  "origen": {
+    "nombre": "La otra bodeguita (C/ López Asme, 6)",
+    "lat": 38.42687, "lon": -6.41760,
+    "fuente": "OpenStreetMap, nodo 11835758669 «La Otra Bodeguita», addr:housenumber 6 (consultado por Overpass el 2026-10-02). Coincide con el pin de Turismo Badajoz (38.4267962, -6.4175447). El pin de Facebook/Instagram (38.42518, -6.41646) cae unos 190 m al sur, en mitad de la calle."
+  },
+  "medido": "2026-10-02",
+  "metodo": "Coordenadas de Nominatim (OpenStreetMap); ruta a pie con routing.openstreetmap.de/routed-foot (OSRM, perfil a pie).",
+  "terrazaEnLaPlaza": null,
+  "lugares": [
+    { "nombre": "La Plaza del Pilar Redondo", "lat": 38.4263848, "lon": -6.4183114, "metros": 92, "minutos": 1,
+      "nombreComprobado": "OpenStreetMap (plaza peatonal, way 99560941)", "paraVer": false },
+    { "nombre": "El Ayuntamiento", "lat": 38.4263228, "lon": -6.4185422, "metros": 126, "minutos": 2,
+      "nombreComprobado": "OpenStreetMap (amenity=townhall). No figura como monumento en turismo.zafra.es: se nombra solo como «el Ayuntamiento».", "paraVer": false },
+    { "nombre": "La Parroquia de Nuestra Señora de la Candelaria", "lat": 38.4259864, "lon": -6.4193447, "metros": 199, "minutos": 3,
+      "nombreComprobado": "turismo.zafra.es/directory/iglesia-de-la-candelaria («Parroquia de Ntr. Sra. de la Candelaria»)", "paraVer": true },
+    { "nombre": "La Plaza Grande", "lat": 38.4253174, "lon": -6.4195078, "metros": 294, "minutos": 4,
+      "nombreComprobado": "turismo.zafra.es/directory/plaza-grande", "paraVer": true },
+    { "nombre": "La Plaza Chica", "lat": 38.4253979, "lon": -6.4202933, "metros": 312, "minutos": 4,
+      "nombreComprobado": "turismo.zafra.es/directory/plaza-chica", "paraVer": true },
+    { "nombre": "El Alcázar de los Duques de Feria (hoy, el Parador)", "lat": 38.4241290, "lon": -6.4168869, "metros": 376, "minutos": 5,
+      "nombreComprobado": "turismo.zafra.es/directory/alcazar-de-los-duques-de-feria («En la actualidad se encuentra ubicado el Parador de Turismo de Zafra»)", "paraVer": true }
+  ],
+  "descartado": "Restaurant Guru dice «a 50 m del Ayuntamiento y 80 m de la iglesia de la Candelaria»: medido a pie son 126 m y 199 m."
+}

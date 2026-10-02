@@ -1,0 +1,12 @@
+{
+  "nota": "Datos de contacto. «whatsapp» va a null mientras no confirmen un número con WhatsApp: con null, el botón sale apagado. Para encenderlo: \"whatsapp\": \"34600000000\" (prefijo y número, sin espacios ni +) y node scripts/construir.mjs.",
+  "telefono": "924 19 44 20",
+  "telefonoEnlace": "+34924194420",
+  "email": "administracion@labodeguitazafra.es",
+  "whatsapp": null,
+  "instagram": "https://www.instagram.com/laotrabodeguita.zafra/",
+  "facebook": "https://www.facebook.com/Laotrabodeguitazafra/",
+  "resenasGoogle": "https://www.google.com/maps/search/?api=1&query=La+otra+bodeguita+Zafra",
+  "comoLlegar": "https://www.google.com/maps/dir/?api=1&destination=38.42687%2C-6.41760",
+  "mapa": "https://www.google.com/maps?q=La+otra+bodeguita,+C.+L%C3%B3pez+Asme+6,+Zafra&output=embed"
+}

@@ -1,0 +1,52 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Módulo «Opiniones». Se puede quitar entero: node scripts/quitar-opiniones.mjs
+   (receta en el README). Citas literales de Google, sin nombre.
+   Pila sticky según el checklist: el <li> es el sticky; TODAS las tarjetas con
+   el mismo alto (el de la más alta, medido por JS); el MISMO margin-bottom en
+   todas, la última incluida; ::after de reposo; el hueco final se compensa con
+   --recorrido en el elemento siguiente; en móvil se desapila.
+   ═══════════════════════════════════════════════════════════════════════════ */
+.opiniones {
+  display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); align-items: start;
+  gap: 2rem clamp(2rem, 6vw, 6rem);
+}
+.opiniones__nota { position: sticky; top: calc(var(--alto-cabecera) + 3vh); display: grid; justify-items: start; gap: .6rem; }
+.opiniones__cifra { display: flex; align-items: center; gap: .1em; font: 700 clamp(6rem, 14vw, 11.5rem)/1 var(--tipo-titular); letter-spacing: -.03em; }
+.opiniones__cifra .estrella { width: .36em; height: .36em; }
+.opiniones__cuenta { margin-bottom: 1rem; font-size: 1.2rem; }
+
+.pila { --tope: calc(var(--alto-cabecera) + 3vh); --recorrido: 34vh; --reposo: 26vh; }
+.pila__item { position: sticky; top: var(--tope); margin-bottom: var(--recorrido); }
+.pila::after { content: ""; display: block; height: var(--reposo); }
+.tarjeta {
+  height: var(--alto-tarjeta, auto);
+  display: grid; align-content: space-between; gap: 2rem;
+  padding: clamp(1.6rem, 3vw, 2.6rem);
+  background: #FBF9F5; border: 2px solid var(--tinta);
+  transform-origin: 50% 0;
+}
+.tarjeta blockquote { font: 300 clamp(1.3rem, 2.1vw, 1.8rem)/1.32 var(--tipo-titular); }
+.tarjeta blockquote::before { content: "«"; }
+.tarjeta blockquote::after { content: "»"; }
+.tarjeta figcaption { display: flex; align-items: center; gap: .6rem; font: 700 .76rem/1 var(--tipo-titular); letter-spacing: .2em; text-transform: uppercase; color: var(--piedra-texto); }
+.tarjeta figcaption::before { content: ""; width: 4px; height: 1rem; background: var(--tinta); }
+.opiniones__pie { margin-top: calc(-1 * var(--recorrido) + 2.6rem); font-size: .88rem; color: var(--piedra-texto); }
+
+/* desapilada: en móvil, en pantallas bajas o si la más alta no cabe */
+.pila.es-desapilada { --recorrido: 0px; }
+.pila.es-desapilada .pila__item { position: static; margin-bottom: 1rem; }
+.pila.es-desapilada .tarjeta { height: auto; transform: none !important; }
+.pila.es-desapilada::after { display: none; }
+.pila.es-desapilada + .opiniones__pie { margin-top: 1.4rem; }
+@media (max-width: 860px) {
+  .opiniones { grid-template-columns: minmax(0, 1fr); }
+  .opiniones__nota { position: static; }
+}
+
+/* ═══ [MANDO DE MAQUETA] densidad sobria: las cinco citas de un vistazo, sin pila ═══ */
+.densidad-sobria .pila { --recorrido: 0px; display: grid; gap: 1rem; }
+.densidad-sobria .pila__item { position: static; margin-bottom: 0; }
+.densidad-sobria .tarjeta { height: auto; transform: none !important; }
+.densidad-sobria .pila::after { display: none; }
+.densidad-sobria .opiniones__pie { margin-top: 1.4rem; }
+/* ═══ fin del bloque [MANDO DE MAQUETA] ═══ */

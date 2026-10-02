@@ -1,0 +1,374 @@
+{
+ "nota": "Fotos de su Instagram (@laotrabodeguita.zafra). «tipo»: plato | local | camara. «plato» activa la regla del C en verificar.mjs (siempre en color, nunca por debajo de 280 px fuera de la copa). «recorte»: \"franja\" quita su marca de agua blanca de abajo; [x0,y0,x1,y1] en fracciones. w, h y anchos los rellena scripts/fotos.mjs.",
+ "fotos": [
+  {
+   "id": "DVa0L3MiLZH",
+   "tipo": "plato",
+   "fecha": "2026-03-03",
+   "alt": "Pulpo a la plancha con patatas, en fuente blanca",
+   "w": 1440,
+   "h": 960,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "DMXNJK4ImGg",
+   "tipo": "plato",
+   "fecha": "2025-07-21",
+   "alt": "Croquetas caseras en su huevera, junto al pan, sobre el mantelito verde",
+   "w": 1440,
+   "h": 960,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "DV-8EuriCKd",
+   "tipo": "plato",
+   "fecha": "2026-03-17",
+   "alt": "T-bone a la brasa cortado sobre la plancha, con patatas fritas",
+   "recorte": "franja",
+   "w": 1080,
+   "h": 994,
+   "anchos": [
+    480,
+    960
+   ]
+  },
+  {
+   "id": "DOk1vFaiGAA",
+   "tipo": "plato",
+   "fecha": "2025-09-14",
+   "alt": "Bacalao a la nata con perejil picado",
+   "w": 1440,
+   "h": 960,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "DWgJmFxiBVu",
+   "tipo": "plato",
+   "fecha": "2026-03-30",
+   "alt": "Carrilleras al vino tinto con patatas, en plato de cerámica azul y blanca",
+   "w": 1440,
+   "h": 1440,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "DQSGjqniL1j",
+   "tipo": "plato",
+   "fecha": "2025-10-26",
+   "alt": "Tiramisú casero con su bizcocho, en plato blanco",
+   "w": 1440,
+   "h": 959,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "DPt6lUpCAj8",
+   "tipo": "plato",
+   "fecha": "2025-10-12",
+   "alt": "Tabla de quesos con pipas y dulce, en fuente de cerámica",
+   "w": 1440,
+   "h": 1231,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "DSQZlFEiO9d",
+   "tipo": "plato",
+   "fecha": "2025-12-14",
+   "alt": "Ensalada de tomate, cebolla morada y atún con vinagreta, en plato de cerámica azul",
+   "w": 1440,
+   "h": 1387,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "DRqDm07COSY",
+   "tipo": "plato",
+   "fecha": "2025-11-29",
+   "alt": "Alcachofa confitada abierta en flor, en fuente alargada",
+   "w": 1440,
+   "h": 1157,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "DQw7alCiA2z",
+   "tipo": "plato",
+   "fecha": "2025-11-07",
+   "alt": "Huevos rotos con pulpo salteado y pimentón",
+   "w": 1440,
+   "h": 960,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "DRIjPxtCFB7",
+   "tipo": "plato",
+   "fecha": "2025-11-16",
+   "alt": "Chipirones a la plancha con ajo y perejil, con ensalada",
+   "w": 1440,
+   "h": 959,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "DT3Gt1OCJYW",
+   "tipo": "plato",
+   "fecha": "2026-01-23",
+   "alt": "Presa ibérica a la brasa con patatas fritas y tomate",
+   "w": 1440,
+   "h": 1168,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "DR7KSpsCGr-",
+   "tipo": "plato",
+   "fecha": "2025-12-06",
+   "alt": "Cachopo de ternera cortado, dorado y crujiente",
+   "w": 1440,
+   "h": 960,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "DGA-vubI_rk",
+   "tipo": "plato",
+   "fecha": "2025-02-13",
+   "alt": "Tarta de queso con mermelada de frutos del bosque y su oblea",
+   "recorte": "franja",
+   "w": 1349,
+   "h": 1576,
+   "anchos": [
+    480,
+    960,
+    1349
+   ]
+  },
+  {
+   "id": "DRsd50uCCcW",
+   "tipo": "plato",
+   "fecha": "2025-11-30",
+   "alt": "Solomillo de buey en lonchas con sal en escamas y patatas",
+   "w": 1440,
+   "h": 960,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "DN6EoJ9iHcX",
+   "tipo": "plato",
+   "fecha": "2025-08-28",
+   "alt": "Chuletón sobre la parrilla, con la llama de la brasa detrás",
+   "w": 1440,
+   "h": 960,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "DKO_RtvIBU8",
+   "tipo": "plato",
+   "fecha": "2025-05-29",
+   "alt": "La piedra volcánica caliente sobre su tabla, con el cuenco de sal",
+   "recorte": [
+    0,
+    0.4,
+    1,
+    0.84
+   ],
+   "w": 2400,
+   "h": 1877,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "DTlWShkDdgR",
+   "tipo": "camara",
+   "fecha": "2026-01-16",
+   "alt": "Chuletones colgados madurando en la cámara",
+   "recorte": [
+    0.04,
+    0.1,
+    1,
+    0.72
+   ],
+   "w": 1382,
+   "h": 595,
+   "anchos": [
+    480,
+    960,
+    1382
+   ]
+  },
+  {
+   "id": "DP-5C53CODL",
+   "tipo": "camara",
+   "fecha": "2025-10-19",
+   "alt": "Pieza con hueso madurando en la cámara",
+   "recorte": [
+    0.5,
+    0,
+    1,
+    1
+   ],
+   "w": 720,
+   "h": 960,
+   "anchos": [
+    480,
+    720
+   ]
+  },
+  {
+   "id": "DSixXvdCEb8",
+   "tipo": "camara",
+   "fecha": "2025-12-22",
+   "alt": "Pieza de vacuno madurada, sobre plato blanco",
+   "w": 1440,
+   "h": 1074,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "Dc9VI6iI7UD",
+   "tipo": "camara",
+   "fecha": "2026-09-06",
+   "alt": "Piezas en la cámara con las etiquetas de sus marcas",
+   "recorte": "franja",
+   "w": 1080,
+   "h": 994,
+   "anchos": [
+    480,
+    960
+   ]
+  },
+  {
+   "id": "DOvVaoBCEwP",
+   "tipo": "local",
+   "fecha": "2025-09-18",
+   "alt": "El comedor: el rótulo encendido sobre el jardín vertical y los listones de madera, con las mesas debajo",
+   "w": 1440,
+   "h": 960,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "DG5nPwQIVAG",
+   "tipo": "local",
+   "fecha": "2025-03-07",
+   "alt": "Lámpara de fibra trenzada encendida",
+   "w": 1440,
+   "h": 1149,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "DHDYWbHIJ92",
+   "tipo": "local",
+   "fecha": "2025-03-11",
+   "alt": "Plato blanco sobre el mantelito verde salvia, en una mesa de madera",
+   "w": 1125,
+   "h": 1406,
+   "anchos": [
+    480,
+    960,
+    1125
+   ]
+  },
+  {
+   "id": "CQ_PKvBlAuH_3",
+   "tipo": "local",
+   "fecha": "2021-07-06",
+   "alt": "La terraza bajo las sombrillas blancas, con la fachada roja y la ocre detrás",
+   "w": 1440,
+   "h": 1440,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "DLfxmz4IOyD",
+   "tipo": "local",
+   "fecha": "2025-06-29",
+   "alt": "Mesa de la terraza puesta, con sillas de ratán",
+   "w": 1440,
+   "h": 1920,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "C5VrpPWt3gf",
+   "tipo": "local",
+   "fecha": "2024-04-04",
+   "alt": "Las letras de La otra bodeguita en la fachada, sobre tablas encaladas",
+   "recorte": "franja",
+   "w": 1080,
+   "h": 994,
+   "anchos": [
+    480,
+    960
+   ]
+  }
+ ]
+}
