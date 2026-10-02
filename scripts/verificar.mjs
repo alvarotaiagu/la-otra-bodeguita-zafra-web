@@ -356,6 +356,22 @@ try {
     await ctx.close();
   }
 
+  /* ═══════════════ 5 bis · el logo de la cabecera cabe en ella, con aire arriba y abajo ═══════════════ */
+  for (const [w, h] of [[1440, 900], [390, 844]]) {
+    const { ctx, page } = await nuevaPagina({ viewport: { width: w, height: h }, hasTouch: w < 800, isMobile: w < 800 });
+    await page.goto(BASE, { waitUntil: 'load' });
+    await page.waitForTimeout(3600);
+    await page.evaluate(() => window.scrollTo(0, 1500));
+    await page.waitForTimeout(900);
+    const r = await page.evaluate(() => {
+      const c = document.getElementById('cabecera').getBoundingClientRect(), l = document.querySelector('.cabecera__marca svg').getBoundingClientRect();
+      return { arriba: Math.round(l.top - c.top), abajo: Math.round(c.bottom - l.bottom), alto: Math.round(l.height), fija: document.getElementById('cabecera').classList.contains('cabecera--fija') };
+    });
+    comprobar(r.fija && r.alto > 30 && r.arriba >= 8 && r.abajo >= 8, 'cabecera ' + w + ': el logo cabe con aire arriba (' + r.arriba + ' px) y abajo (' + r.abajo + ' px)');
+    if (conCapturas) await page.screenshot({ path: foto('cabecera-' + w + '.png'), clip: { x: 0, y: 0, width: w, height: 120 } });
+    await ctx.close();
+  }
+
   /* ═══════════════ 6 · checklist 3 · menú móvil (con la cabecera ya fija) y barra del carril ═══════════════ */
   {
     const { ctx, page } = await nuevaPagina({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true });

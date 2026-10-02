@@ -185,8 +185,10 @@ html.con-js.cortina-fuera .cortina { display: none; }
   display: block; flex: none; width: 0; opacity: 0; overflow: hidden;
   transition: width .45s var(--suave), opacity .35s var(--suave);
 }
-.cabecera__marca svg { width: 104px; }
-.cabecera--fija .cabecera__marca { width: 104px; opacity: 1; }
+/* el logo se mide por el alto de la cabecera: 10 px de aire arriba y abajo (proporción 642 × 520) */
+.cabecera { --marca-alto: calc(var(--alto-cabecera) - 20px); --marca-ancho: calc(var(--marca-alto) * 1.2357); }
+.cabecera__marca svg { width: var(--marca-ancho); height: var(--marca-alto); }
+.cabecera--fija .cabecera__marca { width: var(--marca-ancho); opacity: 1; }
 .cabecera__nav { display: flex; align-items: center; gap: clamp(1rem, 2.2vw, 2.2rem); }
 .cabecera__nav a {
   position: relative; padding: .55rem 0;
@@ -584,8 +586,6 @@ html.con-cursor, html.con-cursor * { cursor: none !important; }
 @media (max-width: 860px) {
   .cabecera { gap: 1rem; justify-content: space-between; background: rgba(244, 241, 236, .92); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--raya); }
   .cabecera__marca { transition: width .45s var(--suave), opacity .35s var(--suave); }
-  .cabecera--fija .cabecera__marca { width: 92px; opacity: 1; }
-  .cabecera__marca svg { width: 92px; }
   .cabecera__menu {
     position: relative; z-index: 2;
     display: grid; place-content: center; gap: 7px;
